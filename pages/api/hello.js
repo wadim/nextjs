@@ -2,5 +2,5 @@
 
 export default (req, res) => {
   res.statusCode = 200;
-  res.json({ query: req.query, json: req.json });
+  res.json({ result: req.query.a + req.query.b });
 };
